@@ -42,7 +42,7 @@ function UpdateUser() {
       <div className="w-full max-w-md bg-white rounded-lg shadow-xl p-8">
         <form onSubmit={handleSubmit}>
           <h2 className="text-3xl font-semibold text-center text-gray-800 mb-6">
-            Add User
+            Update User
           </h2>
 
           <div className="mb-5">

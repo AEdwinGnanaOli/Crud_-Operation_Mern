@@ -2,7 +2,7 @@ import axios from "axios";
 import { toast } from 'react-hot-toast';
 
 axios.defaults.withCredentials = true;
-const BASE_URL = 'http://localhost:8800';
+const BASE_URL = 'https://crud-operation-mern.onrender.com';
 axios.defaults.baseURL = BASE_URL;
 
 export const makeRequest = async (endPoint = '/', method = 'GET', data = null) => {

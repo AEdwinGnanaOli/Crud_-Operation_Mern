@@ -2,7 +2,7 @@ const express = require("express")
 const mongoose = require("mongoose")
 const cors = require("cors")
 const userModel = require("./models/Users")
-
+require('dotenv').config()
 
 const app = express()
 app.use(cors({
@@ -63,10 +63,10 @@ app.post("/create", (req, res) => {
         catch(err => res.json(err))
 })
 
-app.listen(8800, () => {
+app.listen(process.env.PORT, () => {
     console.log("Server is running");
 });
 
-mongoose.connect("mongodb://0.0.0.0:27017/crud").then((connection) => {
+mongoose.connect(process.env.MONGO_URL).then((connection) => {
     console.log("Connected to MongoDB successfully");
 })

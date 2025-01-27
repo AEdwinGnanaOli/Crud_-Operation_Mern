@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+body {
+  /* background-color: #00a8ff !important; */
+  background: linear-gradient(to right, #4fd1c5, #f97316);
+  background-attachment: fixed;
+}
+#user-crud {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+#user-crud-create {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.details {
+  background-color: #fff;
+  width: 45rem;
+  padding: 10px;
+  border-radius: 20px;
+}
+.table {
+  width: 100%;
+}
+.create-user {
+  background-color: #fff;
+  width: 30rem;
+  border-radius: 10px;
+  padding: 30px;
+}
+.user-btns button {
+  margin: 10px;
+}
+.dialog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dialog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dialog-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+  text-align: center;
+  position: relative;
+}
+
+.close-button {
+  background: red;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 15px;
+}
+
+.close-button:hover {
+  background: darkred;
+}
+.icon {
+  display: inline-flex; /* Center the icon within the container */
+  align-items: center;
+  justify-content: center;
+  width: 100px; /* Set a fixed width for the icon container */
+  height: 100px; /* Set a fixed height for the icon container */
+  background-color: #f8f9fa; /* Light gray background */
+  border-radius: 50%; /* Make the container circular */
+  cursor: pointer; /* Change cursor to pointer for interactivity */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+  border: 1px solid #c82333;
+}
+
+.icon:hover {
+  background-color: #e9ecef; /* Slightly darker background on hover */
+
+  transform: scale(1.1); /* Slight zoom-in effect */
+}
+
+.icon:active {
+  transform: scale(0.95); /* Slight shrink effect on click */
+}
+
+.icon svg {
+  fill: #dc3545; /* Set the icon color to red */
+  width: 48px; /* Set the icon width */
+  height: 48px; /* Set the icon height */
+}
+
+.icon:hover svg {
+  fill: #c82333; /* Darker red on hover */
+}
+
+@media screen and (min-width: 80px) and (max-width: 798px) {
+  .details {
+    width: 100% !important;
+    border-radius: 0px;
+  }
+  #user-crud {
+    display: block;
+  }
+}
